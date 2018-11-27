@@ -1,0 +1,274 @@
+name: Radars
+init: q0
+accept: q29
+fitas: F0,FN,FK,FI,FDP,FX1,FX2
+
+//--LOOP DE ESCREVER EM FN
+//F0,FN
+q0,1,_
+q0,_,1,>,>
+
+//F0,FN
+q0,_,_
+q1,_,_,>,<
+
+//--LOOP DE RETORNAR FN
+//FN
+q1,1
+q1,1,<
+
+//FN
+q1,_
+q2,_,>
+
+//--LOOP DE ESCREVER EM FK
+//F0,FK
+q2,1,_
+q2,_,1,>,>
+
+//F0,FK
+q2,_,_
+q3,_,_,>,<
+
+//--LOOP DE RETORNAR FK
+//FK
+q3,1
+q3,1,<
+
+//FK
+q3,_
+q4,_,>
+
+//--ADICIONA 1 AO I
+//FI
+q4,_
+q5,1,-
+
+//--TESTAR SE I > N
+//FN,FI
+q5,1,1
+q5,1,1,>,>
+
+//--I MENOR OU IGUAL N
+//FN,FI
+q5,1,_
+q6,1,_,<,<
+
+//FN,FI
+q5,_,_
+q6,_,_,<,<
+
+//--I MAIOR N
+//FN,FI
+q5,_,1
+qVEMOSDEPOIS,_,1,<,<
+
+//--LOOP DE RETORNAR FN
+//FN
+q6,1
+q6,1,<
+
+//FN
+q6,_
+q7,_,>
+
+//--COPIA I PARA X1
+//FI,FX1
+q7,1,_
+q7,1,1,<,<
+
+//FI,FX1
+q7,_,_
+q8,_,_,>,>
+
+//--APAGAR FK DIGITOS EM X1
+//FK,FX1
+q8,1,1
+q8,1,_,>,>
+
+//FK,FX1
+q8,_,_
+q9,_,_,<,-
+
+//FK,FX1
+q8,_,1
+q9,_,1,<,-
+
+//FK,FX1
+q8,1,_
+q9,1,_,<,-
+
+//--LOOP DE RETORNAR FK
+//FK
+q9,1
+q9,1,<
+
+//FK
+q9,_
+q10,_,>
+
+//--AVANÇAR DP EM X1 CASAS
+
+//--CHECAR SE EXISTE CARACTER EM X1
+//FX1
+q10,1
+q11,1,>
+
+//FX1
+q10,_
+q13,_,<
+
+//--BUSCANDO O VALOR EM FDP
+//FDP
+q11,?
+q12,?,>
+
+//--LOOP DE ENQUANTO TIVER 1 EM DP
+//FDP
+q12,1
+q12,1,>
+
+//FDP
+q12,_
+q10,_,<
+
+//--//--SOMAR F0 EM DP
+//--SOMAR F0 EM X2
+//F0,FX2
+q13,1,_
+q13,_,1,>,>
+
+//F0,FX2
+q13,_,_
+q104,_,_,>,-
+
+//--SOMAR DP EM X2
+//FDP,FX2
+q104,_,_
+q14,_,_,-,<
+
+//FDP,FX2
+q104,1,_
+q105,1,_,-,-
+
+//FDP,FX2
+q105,1,_
+q105,1,1,<,>
+
+//FDP,FX2
+q105,_,_
+q14,_,_,>,<
+
+//--RETORNAR DP EM X1 CASAS
+
+//--CHECAR SE EXISTE CARACTER EM X1
+//FX1
+q14,1
+q15,_,<
+
+//FX1
+q14,_
+q16,_,>
+
+//--BUSCANDO O VALOR EM FDP
+
+//--LOOP DE ENQUANTO TIVER 1 EM DP
+//FDP
+q15,1
+q15,1,<
+
+//FDP
+q15,_
+q14,_,<
+
+//--AVANÇAR DP EM I-1 POSIÇÕES
+//FI
+q16,1
+q17,1,>
+
+//--ENQUANTO I, MOVE DP PRA FRENTE DNV
+//FI
+q17,1
+q18,1,>
+
+//FI
+q17,_
+q20,_,<
+
+//--BUSCANDO O VALOR EM FDP
+//FDP
+q18,?
+q19,?,>
+
+//--LOOP DE ENQUANTO TIVER 1 EM DP
+//FDP
+q19,1
+q19,1,>
+
+//FDP
+q19,_
+q17,_,<
+
+//--COPIAR DP ATUAL EM X1
+//FDP,FX1
+q20,1,_
+q20,1,1,<,<
+
+//FDP,FX1
+q20,_,_
+q21,_,_,>,>
+
+//--AVANÇAR DP EM 1
+//FDP
+q21,_
+q23,_,>
+
+//FDP
+q21,1
+q22,1,-
+
+//FDP
+q22,1
+q22,1,>
+
+//FDP
+q22,_
+q23,_,>
+
+//--ADICIONAR MAXIMO DE X1 e X2 em DP
+//FDP,FX1,FX2
+q23,_,1,1
+q23,1,_,_,>,<,<
+
+//FDP,FX1,FX2
+q23,_,1,_
+q23,1,_,_,>,<,<
+
+//FDP,FX1,FX2
+q23,_,_,1
+q23,1,_,_,>,<,<
+
+//FDP,FX1,FX2
+q23,_,_,_
+q24,_,_,_,<,<,<
+
+//--VOLTANDO DP PARA 0 E I PARA 0
+//--CHECAR SE EXISTE CARACTER EM I
+//FI
+q24,1
+q25,1,<
+
+//FI
+q24,_
+q5,1,-
+
+//--BUSCANDO O VALOR EM FDP
+
+//--LOOP DE ENQUANTO TIVER 1 EM DP
+//FDP
+q25,1
+q25,1,<
+
+//FDP
+q25,_
+q24,_,<

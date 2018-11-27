@@ -1,6 +1,6 @@
 name: Radars
 init: q0
-accept: q29
+accept: q31
 fitas: F0,FN,FK,FI,FDP,FX1,FX2
 
 //--LOOP DE ESCREVER EM FN
@@ -61,7 +61,7 @@ q6,_,_,<,<
 //--I MAIOR N
 //FN,FI
 q5,_,1
-qVEMOSDEPOIS,_,1,<,<
+q26,_,1,<,<
 
 //--LOOP DE RETORNAR FN
 //FN
@@ -109,28 +109,38 @@ q10,_,>
 
 //--AVANÇAR DP EM X1 CASAS
 
-//--CHECAR SE EXISTE CARACTER EM X1
-//FX1
-q10,1
-q11,1,>
-
 //FX1
 q10,_
+q13,_,>
+
+//FX1,FDP
+q10,1,_
+q11,1,_,>,>
+
+//FDP
+q11,1
+q11,1,>
+
+//FDP
+q11,_
+q12,_,>
+
+//FX1
+q12,_
+q103,_,<
+
+//FX1
+q12,1
+q11,1,>
+
+//FDP
+q103,1
+q103,1,>
+
+//FDP
+q103,_
 q13,_,<
 
-//--BUSCANDO O VALOR EM FDP
-//FDP
-q11,?
-q12,?,>
-
-//--LOOP DE ENQUANTO TIVER 1 EM DP
-//FDP
-q12,1
-q12,1,>
-
-//FDP
-q12,_
-q10,_,<
 
 //--//--SOMAR F0 EM DP
 //--SOMAR F0 EM X2
@@ -182,41 +192,47 @@ q15,_
 q14,_,<
 
 //--AVANÇAR DP EM I-1 POSIÇÕES
+//--AVANÇAR I EM 1 POSIÇAO
 //FI
 q16,1
-q17,1,>
-
-//--ENQUANTO I, MOVE DP PRA FRENTE DNV
-//FI
-q17,1
-q18,1,>
+q107,1,>
 
 //FI
-q17,_
+q107,_
 q20,_,<
 
-//--BUSCANDO O VALOR EM FDP
-//FDP
-q18,?
-q19,?,>
+//FI,FDP
+q107,1,_
+q17,1,_,>,>
 
-//--LOOP DE ENQUANTO TIVER 1 EM DP
-//FDP
-q19,1
-q19,1,>
+//--FDP
+//--q108,_
+//--q17,_,>
 
 //FDP
-q19,_
-q17,_,<
+q17,1
+q17,1,>
+
+//FDP
+q17,_
+q18,_,>
+
+//FI
+q18,_
+q20,_,<
+
+//FI
+q18,1
+q17,1,>
 
 //--COPIAR DP ATUAL EM X1
 //FDP,FX1
 q20,1,_
-q20,1,1,<,<
+q20,1,1,>,>
 
 //FDP,FX1
 q20,_,_
-q21,_,_,>,>
+q21,_,_,<,<
 
 //--AVANÇAR DP EM 1
 //FDP
@@ -272,3 +288,45 @@ q25,1,<
 //FDP
 q25,_
 q24,_,<
+
+//--AVANÇANDO N CASAS EM DP
+
+//FN
+q26,_
+q30,_,>
+
+//FN,FDP
+q26,1,_
+q27,1,_,<,>
+
+//FDP
+q27,1
+q27,1,>
+
+//FDP
+q27,_
+q28,_,>
+
+//FN
+q28,_
+q29,_,>
+
+//FN
+q28,1
+q27,1,<
+
+//FDP
+q29,1
+q29,1,>
+
+//FDP
+q29,_
+q30,_,<
+
+//F0,FDP
+q30,_,1
+q30,1,1,<,<
+
+//F0,FDP
+q30,_,_
+q31,_,_,>,>

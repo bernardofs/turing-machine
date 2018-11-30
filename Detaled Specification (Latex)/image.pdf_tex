@@ -1,0 +1,92 @@
+%% Creator: Inkscape inkscape 0.91, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'image.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{1064.145975bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.53451313)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{image.pdf}}%
+    \put(0.0898373,0.49993141){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{[Not supported by viewer]}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{image.pdf}}%
+    \put(0.22214997,0.49993141){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{[Not supported by viewer]}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{image.pdf}}%
+    \put(0.35295909,0.49993141){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{ADICIONAR 1 SÍMBOLO NA FITA I}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{image.pdf}}%
+    \put(0.35295909,0.39543447){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{CHECAR SE I > N}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{image.pdf}}%
+    \put(0.53338547,0.39468269){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{COPIAR I DÍGITOS PARA FITA X1}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{image.pdf}}%
+    \put(0.71381184,0.39468269){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{APAGAR K DÍGITOS NA FITA X1}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{image.pdf}}%
+    \put(0.89423822,0.39468269){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{AVANÇAR O CABEÇOTE DE DP EM X1 POSIÇÕES}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{image.pdf}}%
+    \put(0.89574177,0.27815733){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{[Not supported by viewer]}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{image.pdf}}%
+    \put(0.71757073,0.27515022){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{[Not supported by viewer]}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{image.pdf}}%
+    \put(0.53338547,0.27439844){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{RETORNAR O CABEÇOTE DE DP PARA O INÍCIO}}}%
+    \put(0.43565452,0.40971822){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{NÃO}}}%
+    \put(0.26800834,0.40971822){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{SIM}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{image.pdf}}%
+    \put(0.23267485,0.28943398){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{AVANÇAR CABEÇOTE DE DP EM N POSIÇÕES}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{image.pdf}}%
+    \put(0.23267485,0.16163196){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{COPIAR DP[N] PARA A PRIMEIRA FITA}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{image.pdf}}%
+    \put(0.53338547,0.14659643){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{AVANÇAR CABEÇOTE DE DP EM I-1 POSIÇÕES}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{image.pdf}}%
+    \put(0.71381184,0.14659643){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{COPIAR DP[I-1] PARA X1}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{image.pdf}}%
+    \put(0.89423822,0.14659643){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{AVANÇAR DP EM 1 POSIÇÃO}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{image.pdf}}%
+    \put(0.89423822,0.02631218){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{COPIAR MAX(X1,X2) PARA DP[I]}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{image.pdf}}%
+    \put(0.71381184,0.02631218){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{RETORNAR CABEÇOTE DE DP PARA O INÍCIO}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{image.pdf}}%
+    \put(0.53263369,0.02706396){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{ADICIONAR 1 EM I}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{image.pdf}}%
+  \end{picture}%
+\endgroup%

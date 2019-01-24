@@ -5,3 +5,14 @@ A university project for Computer Theory course at Federal University of Bahia. 
 ## Link
 
 To working machine: https://turingmachinesimulator.com/shared/ihmyvujwyd
+
+## Collaborators
+
+Bernardo Flores Salmeron - [bfs07](https://github.com/bfs07/)
+
+Denilson Amorim - [thelink2012](https://github.com/thelink2012/)
+
+Lucas Natanael - [LucasNBP](https://github.com/LucasNBP/)
+
+Thalles Medrado - [Helwohs](https://github.com/Helwohs/)
+

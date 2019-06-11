@@ -14,5 +14,5 @@ Denilson Amorim - [thelink2012](https://github.com/thelink2012/)
 
 Lucas Natanael - [LucasNBP](https://github.com/LucasNBP/)
 
-Thalles Medrado - [helwohs](https://github.com/helwohs/)
+Thalles Medrado - [tysm](https://github.com/tysm/)
 
